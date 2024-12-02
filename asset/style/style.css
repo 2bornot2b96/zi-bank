@@ -1,0 +1,128 @@
+@keyframes loading {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+body {
+  background-color: #dfdfd9;
+}
+
+header, section, .block {
+  border: 3px solid #579657;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #5a85c5;
+  border-radius: 10px;
+  font-size: 150%;
+  color: white;
+}
+.button:hover {
+  background-color: #c59a5a;
+  color: white;
+}
+.button:disabled {
+  background-color: #305489;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-principal {
+  width: 100px;
+  height: 100px;
+}
+
+.login {
+  display: flex;
+}
+.login-block {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 3px solid #579657;
+  padding: 20px;
+}
+.login-button {
+  margin-top: 20px;
+}
+.login-load {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.login-load-back {
+  overflow: hidden;
+  padding: 0px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px transparent;
+}
+.login-load-border {
+  position: relative;
+  top: 200px;
+  left: 200px;
+  width: 300px;
+  height: 500px;
+  background-image: linear-gradient(red, blue);
+  animation: infinite 2s linear loading;
+  padding: 3px;
+}
+.login-load-front {
+  position: relative;
+  top: -300px;
+  left: 200px;
+  width: 395px;
+  height: 395px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 0px transparent;
+  background-color: #dfdfd9;
+}
+.login-load-stats {
+  display: block;
+  transform: translate(-50%, -50%);
+  font-size: 200%;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+
+.accordion-button {
+  background-color: #b3cfc0;
+}
+
+thead {
+  background-color: #b3cfc0;
+}
+thead td {
+  border: 1px solid #5a85c5;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+tbody {
+  background-color: #dfdfd9;
+}
+tbody td {
+  border: 1px solid #5a85c5;
+  text-align: end;
+  padding: 0px 30px;
+}
+tbody td:first-child {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

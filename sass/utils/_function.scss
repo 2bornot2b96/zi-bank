@@ -1,0 +1,18 @@
+
+@mixin button-color($color) {
+    @if (lightness($color) < 60%) {
+        color: white ;       
+    }@else {
+        color: black;
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: translate(-50% , -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50% , -50%) rotate(360deg) ;
+    }
+}

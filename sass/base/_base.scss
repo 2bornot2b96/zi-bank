@@ -1,0 +1,24 @@
+body {
+    background-color: $color-background;
+}
+
+header , section , .block {
+    border: 3px solid $color-primary;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: $color-secondary;
+    border-radius: 10px;
+    font-size: 150%;
+    @include button-color(complement($color-secondary));
+    &:hover {
+        background-color: complement($color: $color-secondary);
+        @include button-color(complement($color: $color-secondary));
+    }
+    &:disabled {
+        background-color: darken($color: $color-secondary, $amount: 20%);
+        @include button-color(darken($color: $color-secondary, $amount: 20%));
+    }
+}
